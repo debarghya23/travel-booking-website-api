@@ -1,6 +1,6 @@
 const express = require('express');
 const router = express.Router();
-const { createRoom, getRooms, getRoom, updateRoom, updateRoomAvailability, deleteRoom } = require("../controllers/Rooms.controller");
+const { createRoom, getRooms, getRoom, updateRoom, updateRoomAvailability, deleteRoom } = require("../controllers/rooms.controller");
 const { verifyAdmin } = require('../utils/verify');
 
 router.post('/:hotelId', verifyAdmin, createRoom);
